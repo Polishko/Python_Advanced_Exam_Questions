@@ -1,2 +1,2 @@
 # Python_Advanced_Exam_Preparation
-Solution to exam preparation questions of SoftUni
+Solution to Python Advanced exam questions of SoftUni
