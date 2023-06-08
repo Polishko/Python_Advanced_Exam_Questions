@@ -47,17 +47,3 @@ def naughty_or_nice_list(*args, **kwargs):
             result.append(f"{group}: {', '.join(group_kids[group])}")
 
     return "\n".join(result)
-
-
-print(naughty_or_nice_list(
- [
- (6, "John"),
- (4, "Karen"),
- (2, "Tim"),
- (1, "Merry"),
- (6, "John"),
- ],
- "5-Nice",
-))
-
-
