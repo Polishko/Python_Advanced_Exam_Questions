@@ -14,8 +14,8 @@ while boxes and elves:
     box = boxes.pop()
     box_energy = box
     taken_boxes += 1
-
     toys_to_make = 1
+    
     if taken_boxes != 0 and taken_boxes % 3 == 0:
         box_energy *= 2
         toys_to_make = 2
