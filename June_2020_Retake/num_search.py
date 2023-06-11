@@ -10,6 +10,3 @@ def numbers_searching(*args):
         duplicates[num] += 1
 
     return [missing[-1], sorted([num for num in duplicates if duplicates[num] > 1])]
-
-
-print(numbers_searching(3, 6, 5, 5, 9, 10, 7, 8, 7, 9))
