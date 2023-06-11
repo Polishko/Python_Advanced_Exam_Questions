@@ -15,10 +15,3 @@ def list_manipulator(*args):
 
     elif args[1] == "remove" and args[2] == "end":
         return input_list[:-nums[0]] if nums else input_list[:-1]
-
-
-
-
-
-
-print(list_manipulator([1,2,3], "add", "beginning", 20, 30, 40))
