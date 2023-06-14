@@ -23,11 +23,9 @@ while boxes and elves:
     if elf >= box_energy:
         elf -= box_energy
         total_energy += box_energy
-
         if taken_boxes % 5 != 0:
             total_toys += toys_to_make
             elf += 1
-
     else:
         elf *= 2
         boxes.append(box)
