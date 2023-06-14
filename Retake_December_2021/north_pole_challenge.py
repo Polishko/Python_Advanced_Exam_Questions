@@ -1,5 +1,5 @@
 def move_player(position, move, steps):
-    global continue_movement
+    global collected_all
     workshop[position[0]][position[1]] = "x"
     new = []
 
@@ -20,7 +20,7 @@ def move_player(position, move, steps):
         position = new
 
         if all(ele[1][1] - ele[1][0] == 0 for ele in items.items()):
-            continue_movement = False
+            collected_all = True
             workshop[new[0]][new[1]] = "Y"
             return
 
@@ -54,7 +54,7 @@ for row in range(rows):
 
     workshop.append(line)
 
-continue_movement = True
+collected_all = False
 while True:
     line = input().split("-")
 
@@ -64,7 +64,7 @@ while True:
     movement, step_no = line[0], int(line[1])
     my_position = move_player(my_position, movement, step_no)
 
-    if not continue_movement:
+    if collected_all:
         print("Merry Christmas!")
         break
 
