@@ -21,4 +21,5 @@ if energy_seq:
     print(f"Drinks left: {', '.join(str(x) for x in energy_seq)}")
 else:
     print("At least Stamat wasn't exceeding the maximum caffeine.")
+
 print(f"Stamat is going to sleep with {taken_caffeine} mg caffeine.")
