@@ -1,8 +1,11 @@
 def take_position(a):
-    part_1, part_2 = a.split(",")
-    r = int(part_1[1:])
-    c = int(part_2[1:len(part_2) - 1])
-    return [r, c]
+    arg_1, arg_2 = a.strip("()").split(", ")
+    return [int(arg_1), int(arg_2)]
+    
+    # part_1, part_2 = a.split(",")
+    # r = int(part_1[1:])
+    # c = int(part_2[1:len(part_2) - 1])
+    # return [r, c]
 
 
 def find_mines(pos):
