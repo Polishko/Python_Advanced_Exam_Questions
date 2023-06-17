@@ -29,5 +29,3 @@ while durations_sequence and tasks_sequence:
 print("Congratulations, all tasks have been completed! Rubber ducks rewarded:")
 for duck_info in duckies:
     print(f"{duck_info}: {duckies[duck_info][1]}")
-
-
