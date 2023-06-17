@@ -40,7 +40,6 @@ males = deque(int(x) for x in input().split(" "))
 females = deque(int(x) for x in input().split(" "))
 matches = 0
 
-
 while males and females:
     male = take_person(males, gender="males")
     female = take_person(females, gender="females")
