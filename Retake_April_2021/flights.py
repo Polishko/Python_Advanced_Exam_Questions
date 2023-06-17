@@ -3,7 +3,6 @@ def flights(*args):
     final = ""
 
     for arg in args:
-
         if arg == "Finish":
             return collection
 
